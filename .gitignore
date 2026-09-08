@@ -48,12 +48,49 @@
 
 **/build/
 
+# Angular / TypeScript
+**/out-tsc/
+**/bazel-out/
+**/tmp/
+
+
+# ============================================================
+# Node / Angular
+# ============================================================
+
+**/node_modules/
+npm-debug.log
+yarn-error.log
+
+
+# ============================================================
+# Angular
+# ============================================================
+
+**/.angular/cache/
+**/.sass-cache/
+**/coverage/
+**/libpeerconnection.log
+**/testem.log
+**/typings/
+**/__screenshots__/
+
 
 # ============================================================
 # Visual Studio Code
 # ============================================================
 
 .vscode/
+
+# Se quiser versionar configurações específicas do VS Code,
+# remova a linha acima e use:
+#
+# .vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# !.vscode/mcp.json
 
 
 # ============================================================
