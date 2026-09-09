@@ -1,0 +1,69 @@
+<mvc:View
+    controllerName="view.controller.View"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page
+        id="pagina"
+        title="Usuários">
+
+        <content>
+
+            <Table
+                id="tabelaUsuarios"
+                headerText="Lista de Usuários"
+                items="{usuarios>/}">
+
+                <columns>
+
+                    <Column id="colunaId">
+                        <Text
+                            id="textoColunaId"
+                            text="ID" />
+                    </Column>
+
+                    <Column id="colunaNome">
+                        <Text
+                            id="textoColunaNome"
+                            text="Nome" />
+                    </Column>
+
+                    <Column id="colunaEmail">
+                        <Text
+                            id="textoColunaEmail"
+                            text="E-mail" />
+                    </Column>
+
+                </columns>
+
+                <items>
+
+                    <ColumnListItem id="linhaUsuario">
+
+                        <cells>
+
+                            <Text
+                                id="textoUsuarioId"
+                                text="{usuarios>id}" />
+
+                            <Text
+                                id="textoUsuarioNome"
+                                text="{usuarios>nome}" />
+
+                            <Text
+                                id="textoUsuarioEmail"
+                                text="{usuarios>email}" />
+
+                        </cells>
+
+                    </ColumnListItem>
+
+                </items>
+
+            </Table>
+
+        </content>
+
+    </Page>
+
+</mvc:View>
